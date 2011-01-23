@@ -1,0 +1,98 @@
+/**
+ *  Feature Slider
+ */
+.feature-wrapper {
+    overflow: hidden;
+}
+
+.feature-container {
+    width: 950px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.feature-overlay-right {
+    background: rgba(0, 0, 0, 0.6) url(fade-right.png) top left repeat-y;
+    display: block;
+    width: 950px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    left: 950px;
+    top: 0px;
+}
+
+.feature-overlay-left {
+    background: rgba(0, 0, 0, 0.6) url(fade-left.png) right top repeat-y;
+    display: block;
+    width: 950px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    right: 950px;
+    top: 0px;
+}
+
+/**
+ *  Carousel
+ */
+.jcarousel-skin-feature_slider .jcarousel-container {
+    width: 950px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.jcarousel-skin-feature_slider .jcarousel-direction-rtl {
+    direction: rtl;
+}
+
+.jcarousel-skin-feature_slider .jcarousel-clip {
+    width:  950px;
+    height: 300px;
+}
+
+.jcarousel-skin-feature_slider {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.jcarousel-skin-feature_slider li {
+    width: 950px;
+    height: 300px;
+    float: left;
+    list-style: none;
+}
+
+.jcarousel-skin-feature_slider .jcarousel-item-placeholder {
+    background: #000;
+    color: #000;
+}
+
+/**
+ *  Buttons
+ */
+.jcarousel-prev, .jcarousel-next {
+    display: block;
+    height: 36px;
+    width: 35px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 45%;
+    z-index: 6;
+    background: url("sprite.png") no-repeat scroll 0 0 transparent;
+}
+
+.jcarousel-prev {
+    background-position: 0 -60px;
+    left: -50px;
+}
+
+.jcarousel-next {
+    background-position: -36px -60px;
+    right: -50px;
+}
