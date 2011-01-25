@@ -85,6 +85,7 @@
     top: 45%;
     z-index: 6;
     background: url("sprite.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
 }
 
 .jcarousel-prev {
@@ -92,7 +93,25 @@
     left: -50px;
 }
 
+.jcarousel-prev:hover {
+    background-position: 0 -97px;
+}
+
 .jcarousel-next {
     background-position: -36px -60px;
     right: -50px;
+}
+
+.jcarousel-next:hover {
+    background-position: -36px -97px;
+}
+
+.jcarousel-prev-disabled, .jcarousel-prev-disabled:hover {
+	cursor: default;
+	background-position: 0 -60px;
+}
+
+.jcarousel-next-disabled, .jcarousel-next-disabled:hover {
+    cursor: default;
+    background-position: -36px -60px;
 }
