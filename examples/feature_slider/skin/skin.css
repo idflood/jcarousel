@@ -13,7 +13,9 @@
 }
 
 .feature-overlay-right {
-    background: rgba(0, 0, 0, 0.6) url(fade-right.png) top left repeat-y;
+    background: #000 url(fade-right.png) top left repeat-y;
+    opacity: .6;
+    filter: Alpha(opacity=60);
     display: block;
     width: 950px;
     height: 300px;
@@ -24,7 +26,9 @@
 }
 
 .feature-overlay-left {
-    background: rgba(0, 0, 0, 0.6) url(fade-left.png) right top repeat-y;
+    background: #000 url(fade-left.png) right top repeat-y;
+    opacity: .6;
+    filter: Alpha(opacity=60);
     display: block;
     width: 950px;
     height: 300px;
